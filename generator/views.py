@@ -19,7 +19,8 @@ def password(request):
         characters.extend(list('~!@#$%^&*()_+'))
         
     for x in range(length):
-        thepassword+= random.choice(characters)
+        thepassword+= "Happy New year Pillakai"
+        #thepassword+= random.choice(characters)
     return render(request,'generator/password.html',{"password":thepassword})
     
     
